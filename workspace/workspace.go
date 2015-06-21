@@ -376,6 +376,14 @@ func (wrk *Workspace) AutoCycle() {
 	}
 }
 
+func (wrk *Workspace) AutoCycleFloating() {
+	if wrk.State == AutoTiling {
+		wrk.LayoutStateSet(Floating)
+	} else if wrk.State == Floating {
+		wrk.LayoutStateSet(AutoTiling)
+	}
+}
+
 func (wrk *Workspace) Layout(c Client) layout.Layout {
 	switch {
 	case wrk.State == Floating || c.ShouldForceFloating():

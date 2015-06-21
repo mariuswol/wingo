@@ -73,6 +73,22 @@ func (cmd AutoCycle) Run() gribble.Value {
 	})
 }
 
+type AutoCycleFloating struct {
+	Workspace gribble.Any `param:"1" types:"int,string"`
+	Help      string      `
+TODO: doc
+`
+}
+
+func (cmd AutoCycleFloating) Run() gribble.Value {
+	return syncRun(func() gribble.Value {
+		withWorkspace(cmd.Workspace, func(wrk *workspace.Workspace) {
+			wrk.AutoCycleFloating()
+		})
+		return nil
+	})
+}
+
 type AutoResizeMaster struct {
 	Workspace gribble.Any `param:"1" types:"int,string"`
 	Amount    float64     `param:"2"`
