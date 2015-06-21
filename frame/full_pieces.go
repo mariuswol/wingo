@@ -8,9 +8,9 @@ import (
 	"github.com/BurntSushi/xgbutil/xgraphics"
 	"github.com/BurntSushi/xgbutil/xwindow"
 
-	"github.com/BurntSushi/wingo/cursors"
-	"github.com/BurntSushi/wingo/logger"
-	"github.com/BurntSushi/wingo/render"
+	"github.com/mariuswol/wingo/cursors"
+	"github.com/mariuswol/wingo/logger"
+	"github.com/mariuswol/wingo/render"
 )
 
 func (f *Full) newPieceWindow(ident string,

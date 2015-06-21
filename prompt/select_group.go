@@ -5,8 +5,8 @@ import (
 
 	"github.com/BurntSushi/xgbutil/xwindow"
 
-	"github.com/BurntSushi/wingo/logger"
-	"github.com/BurntSushi/wingo/text"
+	"github.com/mariuswol/wingo/logger"
+	"github.com/mariuswol/wingo/text"
 )
 
 type SelectGroup interface {

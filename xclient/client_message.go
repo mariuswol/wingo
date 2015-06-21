@@ -7,10 +7,10 @@ import (
 	"github.com/BurntSushi/xgbutil/icccm"
 	"github.com/BurntSushi/xgbutil/xprop"
 
-	"github.com/BurntSushi/wingo/frame"
-	"github.com/BurntSushi/wingo/logger"
-	"github.com/BurntSushi/wingo/stack"
-	"github.com/BurntSushi/wingo/wm"
+	"github.com/mariuswol/wingo/frame"
+	"github.com/mariuswol/wingo/logger"
+	"github.com/mariuswol/wingo/stack"
+	"github.com/mariuswol/wingo/wm"
 )
 
 func (c *Client) handleClientMessage(name string, data []uint32) {

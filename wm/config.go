@@ -5,9 +5,9 @@ import (
 
 	"github.com/BurntSushi/xgbutil/ewmh"
 
-	"github.com/BurntSushi/wingo/logger"
-	"github.com/BurntSushi/wingo/misc"
-	"github.com/BurntSushi/wingo/wini"
+	"github.com/mariuswol/wingo/logger"
+	"github.com/mariuswol/wingo/misc"
+	"github.com/mariuswol/wingo/wini"
 )
 
 type Configuration struct {
